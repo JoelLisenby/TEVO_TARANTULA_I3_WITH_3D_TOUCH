@@ -1,9 +1,4 @@
-# Marlin 3D Printer Firmware
-
-[![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=RCBugFix)](https://travis-ci.org/MarlinFirmware/Marlin)
-[![Coverity Scan Build Status](https://scan.coverity.com/projects/2224/badge.svg)](https://scan.coverity.com/projects/2224)
-
-<img align="top" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
+# Marlin 3D Printer Firmware for TEVO Tarantula i3 with BLTouch / 3D Touch bed leveling probe
 
 Additional documentation can be found at [The Marlin Documentation Project](https://www.marlinfw.org/).
 Please test this firmware and inform us if it misbehaves in any way, volunteers are standing by!
@@ -17,6 +12,12 @@ You can download earlier versions of Marlin on the [Releases page](https://githu
 The latest Release Candidate lives in the ["RC" branch](https://github.com/MarlinFirmware/Marlin/tree/RC). Bugs that we find in the current Release Candidate are patched in the ["RCBugFix" branch](https://github.com/MarlinFirmware/Marlin/tree/RCBugFix), so during beta testing this is where you can always find the latest code on its way towards release.
 
 ## Recent Changes
+- JL Tarantula Configuration
+  - adjust board to ramps 14 to fix probe pin number.
+  - set z min endstop invert true.
+  - finalize probe offset from extruder for antclabs bltouch mount for tarantula i3 with probe fully screwed in.
+  - adjust probe clearance. adjust boundaries.
+
 - RCBugFix
   - Fixed broken MBL
   - M600 heater timeout option
